@@ -1,0 +1,472 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    background-color: #020659;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    max-width: 834px;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+}
+
+.logo {
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.25em;
+    position: absolute;
+    top: 10px;
+}
+
+header {
+    background-color: #020873;
+    color: #fff;
+    border: 1px solid #020873;
+    
+}
+
+footer {
+    background-color: #fff;
+    margin-top: -327px;
+    border-top: #fff solid 100px;
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    margin-top:  15px;
+    padding-bottom: -15px;
+    position: relative;
+}
+
+nav li {
+    display: inline-block;
+    width: 130px;
+    height: 25px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+nav li:hover {
+    background-color: #590242;
+}
+
+a[href="#home"] {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 3px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-size: 1.25em;
+    line-height: 2em;
+}
+
+h1, h2, h3, #playlists dt {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2, h3, #playlists dt {
+    font-size: 1em;
+    color: #590242;
+    line-height: 2em;
+}
+
+p {
+    width: 200%;
+    margin: 20px 20px 20px 20px;
+    line-height: 20px;
+    font-size: 1em;
+}
+
+small {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    color: #590242;
+}
+
+#playlists h3, #curated h3, #playlists p, #curated p {
+    text-align: center;
+    color: #fff;
+}
+
+#playlists img, #curated img {
+    padding-left: 20px;
+    float: left;
+}
+
+#playlists img:hover, #curated img:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#playlists h2 {
+    background-color: #fff;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+#curated h2 {
+    background-color: #fff;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.scroll {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.scroll section {
+    margin: 10px;
+    position: relative;
+}
+
+.scroll div {
+    position: absolute;
+    top: 251px;
+    background-color: rgba(255,255,255,0.75);
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+}
+
+.scroll-vertical {
+    display: grid;
+    height: 60%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.playlists {
+    background-color: #64b6fd;
+}
+
+.curated {
+    background-color: #030A8C;
+}
+
+.scroll-vertical section {
+    margin: 10px;
+    position: relative;
+}
+
+#trending dl {
+    display: flex;
+}
+
+#trending dt {
+    padding-right: 5px;
+} */
+
+dl, dt {
+    color: #590242;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+audio {
+    position: absolute;
+    bottom: 150px;
+    left: 5px;
+}
+
+.more {
+    text-decoration: none;
+    background-color: #590242;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    display: block;
+    text-align: center;
+    margin: 10px 10px 30px 32px;
+    float: right;
+}
+
+.more:hover {
+    background-color: #020659;
+}
+
+#smooth-jazz h2 {
+    color: white;
+}
+
+#smooth-jazz {
+    background: linear-gradient(90deg, #2104D9, #030A8C, #020659);
+    color: #fff;
+    padding: 1px 10px;
+    position: relative;
+}
+
+#trending {
+    background-color: #fff;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#trending h2 {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.scroll-vertical .playlists-background {
+    background: #2699FB;
+    margin: 10px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.scroll-vertical .playlists-background:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.scroll-vertical .curated-background {
+    background: #020659;
+    margin: 10px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.scroll-vertical .curated-background:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.playlists-background p {
+    display: inline;
+    position: absolute;
+    width: 160px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.curated-background p {
+    display: inline;
+    position: absolute;
+    width: 160px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: #fff;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-play-button {
+    background-color: #fff;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-enclosure {
+    background-color: rgba(255,255,255,0.5);
+}
+
+#trending ::-webkit-scrollbar {
+    width: 15px;
+}
+#trending ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px #590242;
+}
+#trending ::-webkit-scrollbar-thumb {
+    background-color: #590242;
+    border-radius: 5px;
+}
+#trending ::-webkit-scrollbar-thumb:hover {
+    background-color: #020873;
+}
+#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+    width: 15px;
+}
+#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+    box-shadow: inset 0 0 15px #c4c6f570;
+}
+#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+    background: #01043d;
+    border-radius: 5px;
+}
+#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+
+@media screen and (min-width:834px) {
+
+    .logo {
+        position: static;
+    }
+
+    nav {
+        margin-bottom: 50px;
+    }
+
+    ul {
+        overflow: visible;
+    }
+    label span, input {
+        display: none;
+    }
+
+    label {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 834px) {
+
+    body {
+        max-width: 375px;
+    }
+
+    ul {
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        position: absolute;
+        top: 10px;
+        left: 105px;
+    }
+
+    .nav-items {
+        display: block;
+        position: relative;
+        left: 105px;
+    }
+
+    .scroll-vertical {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        overflow-x: auto;
+        overflow-y: hidden;
+        }
+
+        main {
+            display: block;
+            background-color: #fff;
+        }
+
+        body {
+            background-color: #fff;
+        }
+
+        .playlists{
+            background: #0d8dfb;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            overflow-x:auto;
+            overflow-y:hidden;
+            padding: 10px;
+        }
+
+        .playlists-background p {
+            position: relative;
+            display: block;
+        }
+
+        .curated-background p {
+            position: relative;
+            display: block;
+        }
+
+        .curated{
+            background: #020873;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            overflow-x: auto;
+            overflow-y: hidden;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            padding: 10px;
+          }
+
+          .more {
+            float: none;
+            position: relative;
+            z-index: 1;
+          }
+
+          footer {
+            border-top: #fff solid 0px;
+            margin-top: 0px;
+          }
+
+          #trending {
+            padding-bottom: 1px;
+          }
+
+          #smooth-jazz p {
+            width: fit-content;
+        }
+
+        #playlists img, #curated img {
+            padding-left: 28px;
+        }
+}
